@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #E9FAFC;
+    /* background: linear-gradient(to right, #007EA0, #E9FAFC); Градиентный фон */
+    position: relative; /* Для позиционирования фонового изображения */
+    height: 150px; /* Установите нужную высоту заголовка */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Для позиционирования элементов внутри */
+    z-index: 1; /* Убедитесь, что содержимое выше фонового изображения */
+  }
+  
+  .logo {
+    width: 139px; /* Установите нужный размер логотипа */
+    height: 128px; /* Установите нужный размер логотипа */
+    margin-right: 20px;
+  }
+  
+  .title {
+    flex-grow: 1;
+  }
+  
+  .title h1 {
+    font-family: 'Murecho', sans-serif; /* Убедитесь, что шрифт подключен */
+    color: #007EA0; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 33%); /* тень у названия */
+    /* text-shadow: 0 0 .5em #F00; */
+  }
+  
+  .slogan {
+    font-family: 'Murecho', sans-serif; /* Убедитесь, что шрифт подключен */
+    color: #007EA0; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта слогана */
+    margin: 5px 0 0 0; /* Устанавливаем отступы для слогана */
+  }
+  
+  .contact-info {
+    text-align: right;
+  }
+  
+  .phone {
+    font-size: 32px; /* Размер шрифта номера телефона */
+    font-weight: bold;
+    color: #007EA0; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+  }
+  
+  .free-call {
+    font-size: 20px; /* Размер шрифта надписи под номером телефона */
+    color: #007EA0; /* Цвет текста */
+    margin: 5px 0 0 0; /* Устанавливаем отступы для надписи */
+  }
+  
+  .social-icons {
+    margin-top: 5px;
+  }
+  
+  .social-icons img {
+    width: 48px; /* Размер иконок */
+    height: 48px; /* Размер иконок */
+    margin-left: 10px;
+  }
+  
+  /* Добавление фонового изображения на правую половину заголовка */
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%; /* Занимает правую половину */
+    height: 100%;
+    background-image: url('../images/header/Clouds.png'); /* Замените на путь к вашему изображению */
+    background-size: cover; /* Заполнение фона */
+    background-position: center; /* Центрирование изображения */
+    opacity: 0.5; /* Прозрачность изображения, если нужно */
+    z-index: 0; /* Убедитесь, что изображение под содержимым */
+  }
