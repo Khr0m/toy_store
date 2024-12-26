@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../images/header/ButterflyBlue.png';
-import telegram from '../images/header/IconTelegram.png';
-import vk from '../images/header/IconVK.png';
-import almostForbidden from '../images/header/IconWhatsapp.png';
+import Logo from '../images/MainPage/Header/ButterflyBlue.png';
+import telegram from '../images/MainPage/Header/IconTelegram.png';
+import vk from '../images/MainPage/Header/IconVK.png';
+import almostForbidden from '../images/MainPage/Header/IconWhatsapp.png';
 
 const Header = () => {
   return (

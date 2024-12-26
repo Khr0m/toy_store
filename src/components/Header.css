@@ -6,7 +6,7 @@
     background-color: #E9FAFC;
     /* background: linear-gradient(to right, #007EA0, #E9FAFC); Градиентный фон */
     position: relative; /* Для позиционирования фонового изображения */
-    height: 150px; /* Установите нужную высоту заголовка */
+    height: 110px; /* Установите нужную высоту заголовка */
   }
   
   .header-content {
@@ -75,9 +75,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 60%; /* Занимает правую половину */
+    width: 55%; /* Занимает правую половину */
     height: 100%;
-    background-image: url('../images/header/Clouds.png'); /* Замените на путь к вашему изображению */
+    background-image: url('../images/MainPage/Header/Clouds.png'); /* Замените на путь к вашему изображению */
     background-size: cover; /* Заполнение фона */
     background-position: center; /* Центрирование изображения */
     opacity: 0.5; /* Прозрачность изображения, если нужно */
