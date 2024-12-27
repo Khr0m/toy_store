@@ -5,41 +5,45 @@
     padding: 20px;
     background-color: #E9FAFC;
     /* background: linear-gradient(to right, #007EA0, #E9FAFC); Градиентный фон */
-    position: relative; /* Для позиционирования фонового изображения */
-    height: 110px; /* Установите нужную высоту заголовка */
+    position: relative; 
+    height: 110px; 
   }
   
   .header-content {
     display: flex;
     align-items: center;
     width: 100%;
-    position: relative; /* Для позиционирования элементов внутри */
-    z-index: 1; /* Убедитесь, что содержимое выше фонового изображения */
+    position: relative; 
+    z-index: 1; 
+    
   }
   
   .logo {
-    width: 139px; /* Установите нужный размер логотипа */
-    height: 128px; /* Установите нужный размер логотипа */
+    width: 139px; 
+    height: 128px; 
     margin-right: 20px;
   }
   
   .title {
     flex-grow: 1;
+    
   }
   
   .title h1 {
-    font-family: 'Murecho', sans-serif; /* Убедитесь, что шрифт подключен */
-    color: #007EA0; /* Цвет текста */
-    margin: 0; /* Убираем отступы */
-    text-shadow: 0px 4px 5px rgba(0, 0, 0, 33%); /* тень у названия */
+    font-family: 'Murecho', sans-serif; 
+    color: #007EA0; 
+    margin: 0; 
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 33%); 
     /* text-shadow: 0 0 .5em #F00; */
+    font-weight: bold;
   }
   
   .slogan {
-    font-family: 'Murecho', sans-serif; /* Убедитесь, что шрифт подключен */
-    color: #007EA0; /* Цвет текста */
-    font-size: 18px; /* Размер шрифта слогана */
-    margin: 5px 0 0 0; /* Устанавливаем отступы для слогана */
+    font-family: 'Murecho', sans-serif; 
+    color: #007EA0; 
+    font-size: 18px; 
+    margin: 5px 0 0 0; 
+    font-weight: lighter;
   }
   
   .contact-info {
@@ -47,16 +51,16 @@
   }
   
   .phone {
-    font-size: 32px; /* Размер шрифта номера телефона */
+    font-size: 32px; 
     font-weight: bold;
-    color: #007EA0; /* Цвет текста */
-    margin: 0; /* Убираем отступы */
+    color: #007EA0; 
+    margin: 0; 
   }
   
   .free-call {
-    font-size: 20px; /* Размер шрифта надписи под номером телефона */
-    color: #007EA0; /* Цвет текста */
-    margin: 5px 0 0 0; /* Устанавливаем отступы для надписи */
+    font-size: 20px; 
+    color: #007EA0; 
+    margin: 5px 0 0 0; 
   }
   
   .social-icons {
@@ -64,22 +68,22 @@
   }
   
   .social-icons img {
-    width: 48px; /* Размер иконок */
-    height: 48px; /* Размер иконок */
+    width: 48px; 
+    height: 48px; 
     margin-left: 10px;
   }
   
-  /* Добавление фонового изображения на правую половину заголовка */
+
   .header::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
-    width: 55%; /* Занимает правую половину */
+    width: 55%; 
     height: 100%;
-    background-image: url('../images/MainPage/Header/Clouds.png'); /* Замените на путь к вашему изображению */
-    background-size: cover; /* Заполнение фона */
-    background-position: center; /* Центрирование изображения */
-    opacity: 0.5; /* Прозрачность изображения, если нужно */
-    z-index: 0; /* Убедитесь, что изображение под содержимым */
+    background-image: url('../images/MainPage/Header/Clouds.png'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.5; 
+    z-index: 0; 
   }

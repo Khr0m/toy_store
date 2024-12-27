@@ -33,7 +33,7 @@ const ProductList = ({ addToCart }) => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <div style={{  width: '20px', height: '266px', backgroundColor: '#007EA0', display: 'block', marginTop: '20px', marginLeft: '20px' }}></div>
+      <div style={{  width: '20px', height: '287px', backgroundColor: '#007EA0', display: 'block', marginTop: '20px', marginLeft: '20px' }}></div>
       <div style={{ width: '25%', padding: '20px', paddingLeft: '0px'}}>
       
         <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -45,11 +45,14 @@ const ProductList = ({ addToCart }) => {
                 
                 padding: '10px',
                 backgroundColor: selectedCategory === category ? '#007EA0' : '#E9FAFC',
-                color: selectedCategory === category ? '#fff' : '#000',
+                color: selectedCategory === category ? '#fff' : '#056D8A',
                 border: '1px solid grey', 
                 cursor: 'pointer',
                 width: '100%',
-                textAlign: 'left',
+                textAlign: 'center',
+                fontFamily:'Murecho',
+                fontSize: '32',
+                fontWeight: 'Bold'
               }}
             >
               {category}
@@ -62,10 +65,12 @@ const ProductList = ({ addToCart }) => {
       <div style={{ width: '70%', padding: '20px', display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
         {filteredProducts.map(product => (
           <div key={product.id} style={{ backgroundColor:'#E9FAFC', padding: '10px', width: '500px', height:'600px', textAlign: 'center' }}>
-            <h3 style={{fontSize:'40', color:'#007EA0', fontFamily:'Murecho'}}>{product.name}</h3>
+            <h3 style={{fontSize:'40', color:'#007EA0', fontFamily:'Murecho', fontWeight: 'Bold'}}>{product.name}</h3>
             <img src={product.image} alt={product.name} style={{  width: '400px', height: '400px' }} />
-            <p style={{fontSize:'32', color:'#007EA0', fontFamily:'Murecho'}}>Цена: <span style={{fontSize:'32', color:'red', fontFamily:'Murecho'}}>{product.price} ₽</span></p>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <p style={{fontSize:'32', color:'#007EA0', fontFamily:'Murecho', padding: '10px'}}>Цена: <span style={{fontSize:'32', color:'red', fontFamily:'Murecho'}}>{product.price} ₽</span></p>
             <button style={{width: '148px', height: '46', backgroundColor: '#007EA0', color: '#FFFFFF',  borderRadius: '5px', border: '0px'}} onClick={() => addToCart(product)}>В корзину</button>
+            </div>
           </div>
         ))}
       </div>
