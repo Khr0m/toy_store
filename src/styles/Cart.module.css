@@ -1,0 +1,153 @@
+.pageContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Хедер (если есть), контент, футер */
+    min-height: 100vh; 
+  }
+
+.cartContainer {
+    padding: 20px;
+    background-color: #e8f9ff;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .cartContainer h1{
+    color: #056d8a;
+  }
+  
+  .cartContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .cartList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .itemDetails {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    color:#056d8a;
+    font-weight: 500;
+  }
+  
+  .itemImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  
+  .deleteButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .deleteIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .total h3{
+    color: #056d8a;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .paymentOptions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .paymentOptions div{
+    color:#056d8a;
+    font-weight: 500;
+  }
+  
+  .paymentButton {
+    padding: 10px 16px;
+    background-color: white;
+    color: #056d8a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .paymentButton:hover {
+    background-color: #189ec3;
+  }
+
+  .paymentButton img{
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .paymentButton.selected {
+    background-color: #056d8a; /* Цвет для выбранной кнопки */
+    color: white; /* Цвет текста для выбранной кнопки */
+    font-weight: bold;
+  }
+  
+  .purchaseButton {
+    padding: 12px 20px;
+    background-color: #056d8a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .purchaseButton:hover {
+    background-color: #189ec3;
+  }
+  
+  .FooterDark{
+    grid-row: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color: #007ea0;
+  }

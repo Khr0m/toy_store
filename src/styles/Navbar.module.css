@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #00a5cf;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline white; 
+    flex: 1; /* Занимает все доступное пространство */
+    gap: 100px; /* Расстояние между элементами (настраиваемое) */
+}
+
+.navbar .links a {
+    color: white; /* Белый текст */
+    font-size: 32px;
+    transition: color 0.3s ease;
+}
+
+.navbar .links a:hover {
+    color: #056d8a; /* Цвет при наведении */
+    text-decoration: underline;
+}
+
+.cartLink {
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
+}
+
+.cartIcon {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px; 
+}
+
+.cartCount {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: white; /* Белый текст */
+    display: inline-block; /* Гарантирует, что стиль применяется отдельно */
+    font-size: 32px;
+}
+
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 768px) {
+    .navbar .links {
+        gap: 40px;
+    }
+
+    .cartIcon {
+        width: 70px;
+        height: 70px;
+        margin-right: 5px; 
+    }
+}

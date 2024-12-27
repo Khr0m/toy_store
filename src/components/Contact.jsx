@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../styles/Contact.module.css';
 
 import map from '../images/Contact/Map.png';
 
@@ -27,7 +28,7 @@ const Contact = () => {
       alert('Пожалуйста, подтвердите, что вы предоставляете точную информацию.');
       return; // Не отправляем форму, если галочка не нажата
     }
-    alert(`Наименование организации: ${formData.name}\nЮридический адрес: ${formData.email}\nКонтактный email: ${formData.message}\nТип сотрудничества: ${formData.selection}`);
+    alert(`Наименование организации: ${formData.name}\nЮридический адрес: ${formData.message}\nКонтактный email: ${formData.email}\nТип сотрудничества: ${formData.selection}`);
   };
 
 
@@ -81,10 +82,9 @@ const Contact = () => {
           </div>
           <div style={{ width: '678px', height: '100px', marginBottom: '10px', display: 'block', backgroundColor: '#007EA0', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', verticalAlign:'middle' }}>
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              id="message"
+              name="message"
+              value={formData.message}
               onChange={handleChange}
               placeholder='Юридический адрес'
               style={{ width: '638px', height: '76px', fontWeight: 'semibold', fontSize:'32px', borderRadius:'5px', border: 'none' }}
@@ -96,6 +96,7 @@ const Contact = () => {
               id="selection"
               name="selection"
               value={formData.selection}
+              
               onChange={handleChange}
               style={{ color: 'grey', backgroundColor:'white',  width: '638px', height: '76px', fontWeight: 'semibold', fontSize:'32px', borderRadius:'5px', border: 'none' }}
               required
@@ -108,9 +109,11 @@ const Contact = () => {
           </div>
           <div style={{ width: '678px', height: '100px', marginBottom: '10px', display: 'block', backgroundColor: '#007EA0', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', verticalAlign:'middle' }}>
             <input
-              id="message"
-              name="message"
-              value={formData.message}
+              
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
               placeholder='Контактный email'
               style={{width: '638px', height: '76px', fontWeight: 'semibold', fontSize:'32px', borderRadius:'5px', border: 'none'}}
@@ -133,7 +136,13 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <div className={styles.FooterDark}>
+    Г.Екатеринбург ул.Куйбышева д.81 <br />
+    +71234567890 <br />
+    ©️ 2024 ООО "Сказка"
+  </div>
     </div>
+    
   );
 };
 

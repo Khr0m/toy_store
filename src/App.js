@@ -14,6 +14,10 @@ const App = () => {
     setCart([...cart, product]);
   };
 
+  const removeFromCart = (index) => {
+    setCart(cart.filter((_, i) => i !== index));
+  };
+
   const handlePurchase = () => {
     alert(`Вы купили: ${cart.map(item => item.name).join(', ')}`);
     setCart([]);
@@ -26,7 +30,7 @@ const App = () => {
         <Route path="/" element={<Home addToCart={addToCart} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<ProductList addToCart={addToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} handlePurchase={handlePurchase} />} />
+        <Route path="/cart" element={<Cart cart={cart} handlePurchase={handlePurchase} removeFromCart={removeFromCart}/>} />
       </Routes>
     </div>
   );

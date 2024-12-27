@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import styles from '../styles/Contact.module.css';
+
 import barbie from '../images/Catalog/Products/Barbi.jpg';
 import aibolit from '../images/Catalog/Products/Book.jpg';
 import cubiki from '../images/Catalog/Products/Cubics.jpg';
@@ -32,6 +34,7 @@ const ProductList = ({ addToCart }) => {
     : productsData.filter(product => product.category === selectedCategory);
 
   return (
+    <div>
     <div style={{ display: 'flex' }}>
       <div style={{  width: '20px', height: '287px', backgroundColor: '#007EA0', display: 'block', marginTop: '20px', marginLeft: '20px' }}></div>
       <div style={{ width: '25%', padding: '20px', paddingLeft: '0px'}}>
@@ -73,6 +76,13 @@ const ProductList = ({ addToCart }) => {
             </div>
           </div>
         ))}
+      </div>
+      
+    </div>
+    <div className={styles.FooterDark}>
+        Г.Екатеринбург ул.Куйбышева д.81 <br />
+        +71234567890 <br />
+        ©️ 2024 ООО "Сказка"
       </div>
     </div>
   );

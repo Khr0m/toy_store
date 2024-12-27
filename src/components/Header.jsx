@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import '../styles/Header.css';
 import Logo from '../images/MainPage/Header/ButterflyBlue.png';
 import telegram from '../images/MainPage/Header/IconTelegram.png';
 import vk from '../images/MainPage/Header/IconVK.png';
