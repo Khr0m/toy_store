@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/toy-store/static/css/main.6f3c1dbe.css",
+    "main.js": "/toy-store/static/js/main.175b1b99.js",
+    "static/media/Book.jpg": "/toy-store/static/media/Book.1340252cd3bb70f61210.jpg",
+    "static/media/Lego.jpg": "/toy-store/static/media/Lego.1336571e869b279bb0c6.jpg",
+    "static/media/Map.png": "/toy-store/static/media/Map.0faff192b7fe987ca4aa.png",
+    "static/media/Clouds.png": "/toy-store/static/media/Clouds.16171a1ccf57efe88083.png",
+    "static/media/ButterflyBlue.png": "/toy-store/static/media/ButterflyBlue.f76c605edcce0cd952c7.png",
+    "static/media/mishka.jpg": "/toy-store/static/media/mishka.d4f864e1c7dad5b49de6.jpg",
+    "static/media/Barbi.jpg": "/toy-store/static/media/Barbi.bf2379146d27aa0a6128.jpg",
+    "static/media/Монополия.jpeg": "/toy-store/static/media/Монополия.c9180dd86e52ca5cabba.jpeg",
+    "static/media/korgi.jpg": "/toy-store/static/media/korgi.488406964603202c21fd.jpg",
+    "static/media/Cubics.jpg": "/toy-store/static/media/Cubics.0e256aeec058969f45b5.jpg",
+    "static/media/cat.jpg": "/toy-store/static/media/cat.61ec0552c6278e180588.jpg",
+    "index.html": "/toy-store/index.html",
+    "main.6f3c1dbe.css.map": "/toy-store/static/css/main.6f3c1dbe.css.map",
+    "main.175b1b99.js.map": "/toy-store/static/js/main.175b1b99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f3c1dbe.css",
+    "static/js/main.175b1b99.js"
+  ]
+}
