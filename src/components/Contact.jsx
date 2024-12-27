@@ -39,7 +39,7 @@ const Contact = () => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Контейнер для первого и второго блока */}
       <div style={{ display: 'flex', width: '100%', maxWidth: '1600px', marginTop: '20px' }}>
-        {/* Первый блок с параграфами */}
+        {/* Первый блок */}
         <div style={{ color: '#056D8A', backgroundColor: '#E9FAFC', padding: '20px', flex: '1', marginRight: '130px' }}>
           <p>Вы можете найти нас в городе Екатеринбурге по адресу 
 улица Куйбышева, 81. Вход со стороны улицы Куйбышева. 
@@ -57,7 +57,7 @@ const Contact = () => {
           <p>Также мы всегда отвечаем в социальный сетях <span  style={{fontWeight:'bold'}}>Телеграм, Вконтакте и  WhatsApp! </span></p>
         </div>
 
-        {/* Второй блок с изображением */}
+        {/* Второй блок */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <img src = {map} alt="карта" style={{ width: '752px', height: '684px' }} />
         </div>
@@ -65,7 +65,7 @@ const Contact = () => {
 
       {/* Третий блок с формой */}
       <h2 style={{fontSize: '32px', textAlign: 'center',  color: ' #056D8A', fontWeight: 'semibold', marginTop: '40px', marginBottom: '0px'}}>Если вы заинтересованы в сотрудничестве с нами,<br /> пожалуйста, заполните форму</h2>
-      <div style={{ backgroundColor: '#E9FAFC', padding: '20px', width: '100%', maxWidth: '775px', marginTop: '0px', fontFamily: 'Murecho', fontWeight: 'bold' }}>
+      <div style={{ backgroundColor: '#E9FAFC', padding: '20px', width: '100%', maxWidth: '775px', marginTop: '0px', fontFamily: 'Murecho', fontWeight: 'bold', marginBottom: '20px' }}>
         <div style={{display: 'block', height: '40px'}}></div>
         <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div style={{ width: '678px', height: '100px', marginBottom: '10px', display: 'block', backgroundColor: '#007EA0', borderRadius: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', verticalAlign:'middle' }}>

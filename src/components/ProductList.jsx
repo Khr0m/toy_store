@@ -11,7 +11,7 @@ import cat from '../images/Catalog/Products/cat.jpg';
 import paddington from '../images/Catalog/Products/mishka.jpg';
 import korgi from '../images/Catalog/Products/korgi.jpg';
 
-// Пример данных о товарах
+
 const productsData = [
   { id: 1, name: 'Кот-подушка', price: 1500, category: 'Плюшевые игрушки', image: cat },
   { id: 2, name: 'Плюшевый мишка', price: 700, category: 'Плюшевые игрушки', image: paddington },
