@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/toy_store/static/css/main.e260a831.css",
-    "main.js": "/toy_store/static/js/main.b683d871.js",
+    "main.css": "/toy_store/static/css/main.7cde34db.css",
+    "main.js": "/toy_store/static/js/main.9f3f08cc.js",
     "static/media/Book.jpg": "/toy_store/static/media/Book.1340252cd3bb70f61210.jpg",
     "static/media/Lego.jpg": "/toy_store/static/media/Lego.1336571e869b279bb0c6.jpg",
     "static/media/Map.png": "/toy_store/static/media/Map.0faff192b7fe987ca4aa.png",
     "static/media/Clouds.png": "/toy_store/static/media/Clouds.16171a1ccf57efe88083.png",
     "static/media/ButterflyBlue.png": "/toy_store/static/media/ButterflyBlue.f76c605edcce0cd952c7.png",
+    "static/media/Elephant.png": "/toy_store/static/media/Elephant.0a6429787db834688223.png",
     "static/media/mishka.jpg": "/toy_store/static/media/mishka.d4f864e1c7dad5b49de6.jpg",
     "static/media/Barbi.jpg": "/toy_store/static/media/Barbi.bf2379146d27aa0a6128.jpg",
     "static/media/Монополия.jpeg": "/toy_store/static/media/Монополия.c9180dd86e52ca5cabba.jpeg",
     "static/media/korgi.jpg": "/toy_store/static/media/korgi.488406964603202c21fd.jpg",
     "static/media/Cubics.jpg": "/toy_store/static/media/Cubics.0e256aeec058969f45b5.jpg",
+    "static/media/BuyNow.png": "/toy_store/static/media/BuyNow.db6ff10c28aec157fb44.png",
     "static/media/cat.jpg": "/toy_store/static/media/cat.61ec0552c6278e180588.jpg",
+    "static/media/Cat.png": "/toy_store/static/media/Cat.02e6acca1807a15f7460.png",
+    "static/media/ShoppingCart.png": "/toy_store/static/media/ShoppingCart.6cca81dfaa7b4521c318.png",
+    "static/media/TrashCan.png": "/toy_store/static/media/TrashCan.3fd87ef1fd5e48051c85.png",
     "index.html": "/toy_store/index.html",
-    "main.e260a831.css.map": "/toy_store/static/css/main.e260a831.css.map",
-    "main.b683d871.js.map": "/toy_store/static/js/main.b683d871.js.map"
+    "main.7cde34db.css.map": "/toy_store/static/css/main.7cde34db.css.map",
+    "main.9f3f08cc.js.map": "/toy_store/static/js/main.9f3f08cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e260a831.css",
-    "static/js/main.b683d871.js"
+    "static/css/main.7cde34db.css",
+    "static/js/main.9f3f08cc.js"
   ]
 }
